@@ -1,0 +1,44 @@
+/*ヘッダー*/
+header {
+    /*ヘッダーのスタイル*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 30px;
+
+    a.logo {
+        /*ロゴのスタイル*/
+        display: block;
+
+        img {
+            /*画像のスタイル*/
+            display: block;
+            height: 60px;
+        }
+    }
+
+    nav {
+        ul {
+            /*リストブロックのスタイル*/
+            display: flex;
+            height: 20px;
+            gap: 50px;
+            li {
+                align-items: center;
+            }
+        }
+        a {
+            /*aタグのスタイル*/
+            font-size: 14px;
+            font-weight: 400;
+            display: block;
+            padding-inline: 10px;
+            &:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+        }
+    }
+
+}
