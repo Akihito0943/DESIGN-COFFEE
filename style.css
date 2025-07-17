@@ -24,20 +24,69 @@ header {
             display: flex;
             height: 20px;
             gap: 50px;
+
             li {
                 align-items: center;
             }
         }
+
         a {
             /*aタグのスタイル*/
             font-size: 14px;
             font-weight: 400;
             display: block;
             padding-inline: 10px;
+
             &:hover {
                 text-decoration: underline;
                 color: blue;
             }
+        }
+    }
+}
+
+/* ヒーローセクション */
+.hero {
+    height: 640px;
+    background-image: url(img/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    /* h2のスタイル */
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    /* pのスタイル */
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    /* スクロールボタンのスタイル */
+    a {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #6a9631;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        translate: -50% 50%;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        display: grid;
+        place-items: center;
+        img {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
         }
     }
 
