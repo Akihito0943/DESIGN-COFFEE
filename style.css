@@ -100,13 +100,14 @@ header {
 
 
 /* メインのスタイル */
-main {}
+main {
+}
 
 /* containerのスタイル */
 .container {
     max-width: 1160px;
-    margin: 0, auto;
-    padding: 0, 40px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 /* main-sectionのスタイル */
@@ -137,6 +138,40 @@ main {}
             display: block;
             border-radius: 4px;
             margin: 30px auto 0;
+        }
+    }
+}
+
+/* aboutのスタイル */
+.about {
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+    }
+    .image {
+        overflow: hidden;
+        border-radius: 40px;
+        img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 5 / 4;
+        }
+    }
+    .text {
+        img {
+            height: 60px;
+        }
+        h3 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 16px;
+            letter-spacing: 0.08rem;
+            margin-top: 20px;
         }
     }
 }
