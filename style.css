@@ -267,10 +267,60 @@ main {}
     .map {
         border-radius: 40px;
         overflow: hidden;
+
         iframe {
             width: 100%;
             height: auto;
             aspect-ratio: 5 / 4;
+        }
+    }
+}
+
+/* contactのスタイル */
+.contact {
+    background-color: #F3F1EE;
+    text-align: center;
+
+    p {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
+        margin-inline: auto;
+        max-width: 700px;
+    }
+
+    .tel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+
+        .number {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0;
+
+            img {
+                width: 1em;
+            }
+        }
+
+        .hour {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0;
         }
     }
 }
