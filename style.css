@@ -347,3 +347,48 @@ main {}
         }
     }
 }
+
+/* フッターのスタイル */
+footer {
+    background-color: #8B7452;
+    color: #fff;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0 10px;
+
+    a.logo {
+        /*ロゴのスタイル*/
+        display: block;
+        text-align: center;
+        img {
+            /*画像のスタイル*/
+            height: 60px;
+        }
+    }
+
+    nav {
+        ul {
+            /*リストブロックのスタイル*/
+            display: flex;
+            height: 20px;
+            gap: 50px;
+            li {
+                align-items: center;
+            }
+        }
+
+        a {
+            /*aタグのスタイル*/
+            font-size: 14px;
+            font-weight: 400;
+            display: block;
+            padding-inline: 10px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+    }
+}
