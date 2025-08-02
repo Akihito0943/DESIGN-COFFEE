@@ -323,4 +323,27 @@ main {}
             letter-spacing: 0;
         }
     }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+
+        .button {
+            background-color: #6a9631;
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            display: inline-block;
+            border-radius: 8px;
+            padding: 1em 2em;
+        }
+    }
 }
